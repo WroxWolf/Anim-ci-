@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    position: relative;
+    background-color: black;
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+    animation: háttér;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes háttér{
+    0%{background-color:rgb(148, 0, 211);}
+    14%{background-color:rgb(75, 0, 130);}
+    28%{background-color:rgb(0, 0, 255);}
+    39%{background-color:rgb(0, 255, 0);}
+    53%{background-color:rgb(255, 255, 0);}
+    67%{background-color:rgb(255, 127, 0);}
+    87%{background-color:rgb(255, 0, 0);}
+    100%{background-color:rgb(148, 0, 211);}
+}
+.labda{
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background-color: red;
+    height: 64px;
+    width:64px;
+    border-radius: 50%;
+    animation: labda;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes labda{
+    0%{left:0%;}
+    50%{left:89%;}
+    100%{left: 0;}
+    100%{background-color:rgb(148, 0, 211);}
+    87%{background-color:rgb(75, 0, 130);}
+    67%{background-color:rgb(0, 0, 255);}
+    53%{background-color:rgb(0, 255, 0);}
+    39%{background-color:rgb(255, 255, 0);}
+    28%{background-color:rgb(255, 127, 0);}
+    14%{background-color:rgb(255, 0, 0);}
+    0%{background-color:rgb(148, 0, 211);}
+}
+
